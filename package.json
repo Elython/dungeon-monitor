@@ -1,0 +1,21 @@
+{
+  "name": "veyra-dungeon-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only dungeon monitoring and Discord notifications",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/cli.js run",
+    "check": "node src/cli.js check",
+    "preview": "node src/cli.js run --preview --once",
+    "demo": "node src/demo.js",
+    "test": "node --test test/*.test.js",
+    "register-commands": "node src/cli.js register-commands",
+    "invite": "node src/cli.js invite-link"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0"
+  }
+}

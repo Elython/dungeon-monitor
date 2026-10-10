@@ -1,0 +1,18 @@
+[Unit]
+Description=Read-only game dungeon monitor and Discord notifier
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/absolute/path/to/dungeon-monitor
+ExecStart=/usr/bin/node src/cli.js run
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=60
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

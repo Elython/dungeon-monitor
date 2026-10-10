@@ -1,0 +1,8 @@
+config.json
+private/
+data/
+node_modules/
+*.har
+*.cookies.json
+*.log
+.env

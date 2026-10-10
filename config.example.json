@@ -1,0 +1,22 @@
+{
+  "pollSeconds": 120,
+  "requestTimeoutSeconds": 20,
+  "requestGapMilliseconds": 500,
+  "missingConfirmations": 2,
+  "watcherReadBudget": 6,
+  "watcherReadGapMilliseconds": 2000,
+  "sessionFile": "private/session.json",
+  "stateFile": "data/state.json",
+  "discord": {
+    "dashboard": true,
+    "announcements": true,
+    "applicationId": "",
+    "guildId": "",
+    "channelId": "",
+    "operatorRoleIds": [],
+    "tokenFile": "private/discord-bot-token.txt",
+    "templatesFile": "data/message-templates.json",
+    "settingsFile": "data/discord-settings.json",
+    "watcherFile": "data/watcher-settings.json"
+  }
+}

@@ -1,0 +1,9 @@
+<!doctype html>
+<!-- Minimal redacted reproduction: the live monitoring session returned 200 with identity/directory markers and challenge-platform text, but no challenge header/title/stage. -->
+<title>Guild Dungeons</title>
+<span class="small-name">Monitoring Account</span>
+<div class="section-title">Active Dungeon Templates</div>
+<!-- Cloudflare documents this path as ordinary background JavaScript Detections. -->
+<script src="/cdn-cgi/challenge-platform/scripts/jsd/api.js"></script>
+<script>const unusedExample = '<title>Just a moment</title><div id="challenge-stage"></div>'; const libraryName = 'cf-turnstile';</script>
+
